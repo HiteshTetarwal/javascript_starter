@@ -11,3 +11,12 @@ let hellospeaker = function(name) {
 }
 
 hellospeaker('Hitesh')
+
+//returning funtions
+
+let numadder = function(num1,num2){
+    let added = num1 + num2
+    return added
+}
+
+console.log(`The sume of 2 and 3 is ${numadder(2,3)}`);
