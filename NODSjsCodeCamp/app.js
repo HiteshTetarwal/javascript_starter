@@ -16,6 +16,43 @@ eventEmitter.on('tutorial_param',(num1,num2)=>{
 eventEmitter.emit('tutorial_param',1,2)
 
 
+class Person extends EventEmitter{
+    constructor(name){
+        super();
+        this._name = name;
+    }
+
+    get name(){
+        return this._name;
+    }
+}
+
+let pedro = new Person('Pedro');
+let christina = new Person('Christina')
+
+christina.on('name',()=>{
+    console.log('my name is '+christina.name);
+})
+
+pedro.on('name',()=>{
+    console.log('my name is '+pedro.name);
+})
+
+pedro.emit('name');
+christina.emit('name');
+
+
+
+
+
+
+
+
+
+
+
+
+
 //basics 
 
 
