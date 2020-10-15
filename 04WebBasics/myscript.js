@@ -4,7 +4,11 @@ document.querySelector('button').addEventListener('click',(event) => {
     event.target.textContent = 'I was clicked';
 })
 
+//track input form
 
+document.querySelector('#myform').addEventListener('input',(event)=>{
+    console.log(event.target.value); //input listener checked the values on each input just like google
+})
 
 
 
