@@ -7,3 +7,10 @@ function myValidation(){
         console.log('This is cool!');
     }
 }
+
+//form validation
+
+document.querySelector('.myform').addEventListener('submit',(event)=>{
+    console.log(event.target.username.value);
+    event.target.username.value = ''
+})
