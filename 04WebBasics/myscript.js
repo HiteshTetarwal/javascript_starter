@@ -1,3 +1,9 @@
+
+
+
+
+// go through commented code for basic html brushup
+
 // // alert('File is attached')
 
 // const myPElements = document.querySelector('p') //just selects the first p tag it encounters
@@ -20,3 +26,13 @@
 // const myIdElements = document.querySelectorAll('.classOne')
 
 // console.log(myIdElements[0]);
+
+// const myNewPara = document.createElement('p')
+
+// myNewPara.textContent = 'I was added via JS'
+
+// document.querySelector('body').appendChild(myNewPara)
+
+document.querySelector('button').addEventListener('click',(event) => {
+    event.target.textContent = 'I was clicked';
+})
